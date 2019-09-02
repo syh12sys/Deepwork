@@ -19,6 +19,21 @@
     <Filter Include="decorater">
       <UniqueIdentifier>{e4fa0c73-2520-4732-bbe9-d0e40b569acc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="strategy">
+      <UniqueIdentifier>{35078c4a-d87f-4ffd-a917-b8972ab89c3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="factory">
+      <UniqueIdentifier>{9a9afe86-6da1-4fa3-ba46-d56db989fa5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="factory\factory_method">
+      <UniqueIdentifier>{0bda3ad9-907b-4a93-a779-777ba3d828a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="factory\simple_factory">
+      <UniqueIdentifier>{e9d805c3-251f-4a70-b528-0d5d29775775}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="factory\abstract_factory">
+      <UniqueIdentifier>{23ad395c-ae92-4e6d-a599-4505ad7105b4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -54,6 +69,84 @@
     <ClInclude Include="decorater\CoffeeShop.h">
       <Filter>decorater</Filter>
     </ClInclude>
+    <ClInclude Include="strategy\Duck.h">
+      <Filter>strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="strategy\RubberDuck.h">
+      <Filter>strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="strategy\RedDuck.h">
+      <Filter>strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="strategy\BlackDuck.h">
+      <Filter>strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="strategy\Context.h">
+      <Filter>strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="strategy\FlyWithWing.h">
+      <Filter>strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="strategy\DuckFly.h">
+      <Filter>strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="strategy\NotFly.h">
+      <Filter>strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="factory\Pizza.h">
+      <Filter>factory</Filter>
+    </ClInclude>
+    <ClInclude Include="factory\PizzaStore.h">
+      <Filter>factory</Filter>
+    </ClInclude>
+    <ClInclude Include="factory\Client.h">
+      <Filter>factory</Filter>
+    </ClInclude>
+    <ClInclude Include="factory\factory_method\ChicagoHamPizza.h">
+      <Filter>factory\factory_method</Filter>
+    </ClInclude>
+    <ClInclude Include="factory\factory_method\ChicagoPizzaStore.h">
+      <Filter>factory\factory_method</Filter>
+    </ClInclude>
+    <ClInclude Include="factory\factory_method\ChicagoSpicyPizza.h">
+      <Filter>factory\factory_method</Filter>
+    </ClInclude>
+    <ClInclude Include="factory\factory_method\NYCheesePizza.h">
+      <Filter>factory\factory_method</Filter>
+    </ClInclude>
+    <ClInclude Include="factory\factory_method\NYPizzaStore.h">
+      <Filter>factory\factory_method</Filter>
+    </ClInclude>
+    <ClInclude Include="factory\factory_method\NYSweetPizza.h">
+      <Filter>factory\factory_method</Filter>
+    </ClInclude>
+    <ClInclude Include="factory\simple_factory\SimplePizzaFactory.h">
+      <Filter>factory\simple_factory</Filter>
+    </ClInclude>
+    <ClInclude Include="factory\abstract_factory\ChicagoSauce.h">
+      <Filter>factory\abstract_factory</Filter>
+    </ClInclude>
+    <ClInclude Include="factory\abstract_factory\ChicagoShrimps.h">
+      <Filter>factory\abstract_factory</Filter>
+    </ClInclude>
+    <ClInclude Include="factory\abstract_factory\NYSauce.h">
+      <Filter>factory\abstract_factory</Filter>
+    </ClInclude>
+    <ClInclude Include="factory\abstract_factory\NYShrimps.h">
+      <Filter>factory\abstract_factory</Filter>
+    </ClInclude>
+    <ClInclude Include="factory\abstract_factory\RawMaterial.h">
+      <Filter>factory\abstract_factory</Filter>
+    </ClInclude>
+    <ClInclude Include="factory\abstract_factory\AbstractFactory.h">
+      <Filter>factory\abstract_factory</Filter>
+    </ClInclude>
+    <ClInclude Include="factory\abstract_factory\ChicagoFactory.h">
+      <Filter>factory\abstract_factory</Filter>
+    </ClInclude>
+    <ClInclude Include="factory\abstract_factory\NYFactory.h">
+      <Filter>factory\abstract_factory</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -85,6 +178,81 @@
     </ClCompile>
     <ClCompile Include="decorater\CoffeeShop.cpp">
       <Filter>decorater</Filter>
+    </ClCompile>
+    <ClCompile Include="strategy\Duck.cpp">
+      <Filter>strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="strategy\RubberDuck.cpp">
+      <Filter>strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="strategy\RedDuck.cpp">
+      <Filter>strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="strategy\BlackDuck.cpp">
+      <Filter>strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="strategy\Context.cpp">
+      <Filter>strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="strategy\FlyWithWing.cpp">
+      <Filter>strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="strategy\NotFly.cpp">
+      <Filter>strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="factory\Pizza.cpp">
+      <Filter>factory</Filter>
+    </ClCompile>
+    <ClCompile Include="factory\PizzaStore.cpp">
+      <Filter>factory</Filter>
+    </ClCompile>
+    <ClCompile Include="factory\Client.cpp">
+      <Filter>factory</Filter>
+    </ClCompile>
+    <ClCompile Include="factory\factory_method\ChicagoHamPizza.cpp">
+      <Filter>factory\factory_method</Filter>
+    </ClCompile>
+    <ClCompile Include="factory\factory_method\ChicagoPizzaStore.cpp">
+      <Filter>factory\factory_method</Filter>
+    </ClCompile>
+    <ClCompile Include="factory\factory_method\ChicagoSpicyPizza.cpp">
+      <Filter>factory\factory_method</Filter>
+    </ClCompile>
+    <ClCompile Include="factory\factory_method\NYCheesePizza.cpp">
+      <Filter>factory\factory_method</Filter>
+    </ClCompile>
+    <ClCompile Include="factory\factory_method\NYPizzaStore.cpp">
+      <Filter>factory\factory_method</Filter>
+    </ClCompile>
+    <ClCompile Include="factory\factory_method\NYSweetPizza.cpp">
+      <Filter>factory\factory_method</Filter>
+    </ClCompile>
+    <ClCompile Include="factory\simple_factory\SimplePizzaFactory.cpp">
+      <Filter>factory\simple_factory</Filter>
+    </ClCompile>
+    <ClCompile Include="factory\abstract_factory\ChicagoSauce.cpp">
+      <Filter>factory\abstract_factory</Filter>
+    </ClCompile>
+    <ClCompile Include="factory\abstract_factory\ChicagoShrimps.cpp">
+      <Filter>factory\abstract_factory</Filter>
+    </ClCompile>
+    <ClCompile Include="factory\abstract_factory\NYSauce.cpp">
+      <Filter>factory\abstract_factory</Filter>
+    </ClCompile>
+    <ClCompile Include="factory\abstract_factory\NYShrimps.cpp">
+      <Filter>factory\abstract_factory</Filter>
+    </ClCompile>
+    <ClCompile Include="factory\abstract_factory\RawMaterial.cpp">
+      <Filter>factory\abstract_factory</Filter>
+    </ClCompile>
+    <ClCompile Include="factory\abstract_factory\AbstractFactory.cpp">
+      <Filter>factory\abstract_factory</Filter>
+    </ClCompile>
+    <ClCompile Include="factory\abstract_factory\ChicagoFactory.cpp">
+      <Filter>factory\abstract_factory</Filter>
+    </ClCompile>
+    <ClCompile Include="factory\abstract_factory\NYFactory.cpp">
+      <Filter>factory\abstract_factory</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

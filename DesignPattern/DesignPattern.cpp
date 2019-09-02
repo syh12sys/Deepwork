@@ -10,6 +10,10 @@
 
 #include "decorater/CoffeeShop.h"
 
+#include "strategy/Context.h"
+
+#include "factory/Client.h"
+
 int _tmain(int argc, _TCHAR* argv[])
 {
     Subject subject;
@@ -28,6 +32,14 @@ int _tmain(int argc, _TCHAR* argv[])
     std::cout << "\n********************装饰模式************************" << std::endl;
     CoffeeShop coffeeShop;
     coffeeShop.Sell();
+
+    std::cout << "\n********************策略模式************************" << std::endl;
+    Context context;
+    context.Show();
+
+    std::cout << "\n********************工厂模式************************" << std::endl;
+    Client client;
+    client.Order();
 
     getchar();
 	return 0;

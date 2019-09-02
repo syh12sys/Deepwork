@@ -85,9 +85,35 @@
     <ClInclude Include="decorater\LemonCoffee.h" />
     <ClInclude Include="decorater\OriginalCoffee.h" />
     <ClInclude Include="decorater\SugarCoffee.h" />
+    <ClInclude Include="factory\abstract_factory\AbstractFactory.h" />
+    <ClInclude Include="factory\abstract_factory\ChicagoFactory.h" />
+    <ClInclude Include="factory\abstract_factory\ChicagoSauce.h" />
+    <ClInclude Include="factory\abstract_factory\ChicagoShrimps.h" />
+    <ClInclude Include="factory\abstract_factory\NYFactory.h" />
+    <ClInclude Include="factory\abstract_factory\NYSauce.h" />
+    <ClInclude Include="factory\abstract_factory\NYShrimps.h" />
+    <ClInclude Include="factory\abstract_factory\RawMaterial.h" />
+    <ClInclude Include="factory\Client.h" />
+    <ClInclude Include="factory\factory_method\ChicagoHamPizza.h" />
+    <ClInclude Include="factory\factory_method\ChicagoPizzaStore.h" />
+    <ClInclude Include="factory\factory_method\ChicagoSpicyPizza.h" />
+    <ClInclude Include="factory\factory_method\NYCheesePizza.h" />
+    <ClInclude Include="factory\factory_method\NYPizzaStore.h" />
+    <ClInclude Include="factory\factory_method\NYSweetPizza.h" />
+    <ClInclude Include="factory\Pizza.h" />
+    <ClInclude Include="factory\PizzaStore.h" />
+    <ClInclude Include="factory\simple_factory\SimplePizzaFactory.h" />
     <ClInclude Include="observer\ConcreteObserver.h" />
     <ClInclude Include="observer\Subject.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="strategy\BlackDuck.h" />
+    <ClInclude Include="strategy\Context.h" />
+    <ClInclude Include="strategy\Duck.h" />
+    <ClInclude Include="strategy\DuckFly.h" />
+    <ClInclude Include="strategy\FlyWithWing.h" />
+    <ClInclude Include="strategy\NotFly.h" />
+    <ClInclude Include="strategy\RedDuck.h" />
+    <ClInclude Include="strategy\RubberDuck.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
@@ -98,12 +124,37 @@
     <ClCompile Include="decorater\OriginalCoffee.cpp" />
     <ClCompile Include="decorater\SugarCoffee.cpp" />
     <ClCompile Include="DesignPattern.cpp" />
+    <ClCompile Include="factory\abstract_factory\AbstractFactory.cpp" />
+    <ClCompile Include="factory\abstract_factory\ChicagoFactory.cpp" />
+    <ClCompile Include="factory\abstract_factory\ChicagoSauce.cpp" />
+    <ClCompile Include="factory\abstract_factory\ChicagoShrimps.cpp" />
+    <ClCompile Include="factory\abstract_factory\NYFactory.cpp" />
+    <ClCompile Include="factory\abstract_factory\NYSauce.cpp" />
+    <ClCompile Include="factory\abstract_factory\NYShrimps.cpp" />
+    <ClCompile Include="factory\abstract_factory\RawMaterial.cpp" />
+    <ClCompile Include="factory\Client.cpp" />
+    <ClCompile Include="factory\factory_method\ChicagoHamPizza.cpp" />
+    <ClCompile Include="factory\factory_method\ChicagoPizzaStore.cpp" />
+    <ClCompile Include="factory\factory_method\ChicagoSpicyPizza.cpp" />
+    <ClCompile Include="factory\factory_method\NYCheesePizza.cpp" />
+    <ClCompile Include="factory\factory_method\NYPizzaStore.cpp" />
+    <ClCompile Include="factory\factory_method\NYSweetPizza.cpp" />
+    <ClCompile Include="factory\Pizza.cpp" />
+    <ClCompile Include="factory\PizzaStore.cpp" />
+    <ClCompile Include="factory\simple_factory\SimplePizzaFactory.cpp" />
     <ClCompile Include="observer\ConcreteObserver.cpp" />
     <ClCompile Include="observer\Subject.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="strategy\BlackDuck.cpp" />
+    <ClCompile Include="strategy\Context.cpp" />
+    <ClCompile Include="strategy\Duck.cpp" />
+    <ClCompile Include="strategy\FlyWithWing.cpp" />
+    <ClCompile Include="strategy\NotFly.cpp" />
+    <ClCompile Include="strategy\RedDuck.cpp" />
+    <ClCompile Include="strategy\RubberDuck.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
