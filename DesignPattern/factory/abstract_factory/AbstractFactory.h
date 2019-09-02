@@ -4,6 +4,7 @@
 
 class RawMaterial;
 
+// 解决分体系产品的创建
 class AbstractFactory
 {
 public:
