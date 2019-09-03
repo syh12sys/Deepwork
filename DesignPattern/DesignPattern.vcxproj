@@ -105,6 +105,8 @@
     <ClInclude Include="factory\simple_factory\SimplePizzaFactory.h" />
     <ClInclude Include="observer\ConcreteObserver.h" />
     <ClInclude Include="observer\Subject.h" />
+    <ClInclude Include="singleton\LazySingleton.h" />
+    <ClInclude Include="singleton\Singleton.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="strategy\BlackDuck.h" />
     <ClInclude Include="strategy\Context.h" />
@@ -144,6 +146,8 @@
     <ClCompile Include="factory\simple_factory\SimplePizzaFactory.cpp" />
     <ClCompile Include="observer\ConcreteObserver.cpp" />
     <ClCompile Include="observer\Subject.cpp" />
+    <ClCompile Include="singleton\LazySingleton.cpp" />
+    <ClCompile Include="singleton\Singleton.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>

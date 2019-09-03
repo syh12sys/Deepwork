@@ -14,6 +14,9 @@
 
 #include "factory/Client.h"
 
+#include "singleton/Singleton.h"
+#include "singleton/LazySingleton.h"
+
 int _tmain(int argc, _TCHAR* argv[])
 {
     Subject subject;
@@ -40,6 +43,10 @@ int _tmain(int argc, _TCHAR* argv[])
     std::cout << "\n********************工厂模式************************" << std::endl;
     Client client;
     client.Order();
+
+    std::cout << "\n********************单例模式，最简单却最有用************************" << std::endl;
+    Singleton::GetInstance();
+    LazySingleton::GetInstance();
 
     getchar();
 	return 0;

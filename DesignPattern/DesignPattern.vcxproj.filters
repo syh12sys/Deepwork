@@ -34,6 +34,9 @@
     <Filter Include="factory\abstract_factory">
       <UniqueIdentifier>{23ad395c-ae92-4e6d-a599-4505ad7105b4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="singleton">
+      <UniqueIdentifier>{34e27738-a00c-48da-a503-76881d9e9a62}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -147,6 +150,12 @@
     <ClInclude Include="factory\abstract_factory\NYFactory.h">
       <Filter>factory\abstract_factory</Filter>
     </ClInclude>
+    <ClInclude Include="singleton\Singleton.h">
+      <Filter>singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="singleton\LazySingleton.h">
+      <Filter>singleton</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -253,6 +262,12 @@
     </ClCompile>
     <ClCompile Include="factory\abstract_factory\NYFactory.cpp">
       <Filter>factory\abstract_factory</Filter>
+    </ClCompile>
+    <ClCompile Include="singleton\Singleton.cpp">
+      <Filter>singleton</Filter>
+    </ClCompile>
+    <ClCompile Include="singleton\LazySingleton.cpp">
+      <Filter>singleton</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
