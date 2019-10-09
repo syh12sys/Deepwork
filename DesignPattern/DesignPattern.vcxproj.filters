@@ -37,6 +37,36 @@
     <Filter Include="singleton">
       <UniqueIdentifier>{34e27738-a00c-48da-a503-76881d9e9a62}</UniqueIdentifier>
     </Filter>
+    <Filter Include="command">
+      <UniqueIdentifier>{facc9fd4-35c0-403e-b0d6-7743b91447c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="adapter">
+      <UniqueIdentifier>{74e05cc7-6ec7-4648-a070-82b6f986d2bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="facade">
+      <UniqueIdentifier>{90a1fabd-4f68-42dc-aa3f-918fdd1fb94f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="template">
+      <UniqueIdentifier>{dd75c532-3206-43af-9990-50c78ab1efa5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="composite">
+      <UniqueIdentifier>{394a17b0-aedf-445a-8dc9-17ff21c7286d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="state">
+      <UniqueIdentifier>{c3771ff9-1a4e-4bdd-b432-caeac214c943}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proxy">
+      <UniqueIdentifier>{5a3a8f73-6d76-4c22-bbf3-a420ddd03cd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proxy\RemoteProxy">
+      <UniqueIdentifier>{d58b352a-a84f-4252-8195-0046e8dca059}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="iterate">
+      <UniqueIdentifier>{25ed821b-1d0c-4018-b8c8-904b1801fb9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proxy\VirtualProxy">
+      <UniqueIdentifier>{fd13f138-f8c3-4222-a878-68c00dd0575e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -156,6 +186,147 @@
     <ClInclude Include="singleton\LazySingleton.h">
       <Filter>singleton</Filter>
     </ClInclude>
+    <ClInclude Include="command\Command.h">
+      <Filter>command</Filter>
+    </ClInclude>
+    <ClInclude Include="command\RomoteControl.h">
+      <Filter>command</Filter>
+    </ClInclude>
+    <ClInclude Include="command\CommandClient.h">
+      <Filter>command</Filter>
+    </ClInclude>
+    <ClInclude Include="command\LightCommand.h">
+      <Filter>command</Filter>
+    </ClInclude>
+    <ClInclude Include="command\Light.h">
+      <Filter>command</Filter>
+    </ClInclude>
+    <ClInclude Include="adapter\Bird.h">
+      <Filter>adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="adapter\ConcreteBird.h">
+      <Filter>adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="adapter\Chicken.h">
+      <Filter>adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="adapter\ConcreteChicken.h">
+      <Filter>adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="adapter\BirdAdapter.h">
+      <Filter>adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="adapter\AdapterTest.h">
+      <Filter>adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="facade\facade.h">
+      <Filter>facade</Filter>
+    </ClInclude>
+    <ClInclude Include="facade\Screen.h">
+      <Filter>facade</Filter>
+    </ClInclude>
+    <ClInclude Include="facade\TV.h">
+      <Filter>facade</Filter>
+    </ClInclude>
+    <ClInclude Include="facade\VCD.h">
+      <Filter>facade</Filter>
+    </ClInclude>
+    <ClInclude Include="template\SanQi.h">
+      <Filter>template</Filter>
+    </ClInclude>
+    <ClInclude Include="template\Tea.h">
+      <Filter>template</Filter>
+    </ClInclude>
+    <ClInclude Include="template\Drink.h">
+      <Filter>template</Filter>
+    </ClInclude>
+    <ClInclude Include="template\NewSanQi.h">
+      <Filter>template</Filter>
+    </ClInclude>
+    <ClInclude Include="template\NewTea.h">
+      <Filter>template</Filter>
+    </ClInclude>
+    <ClInclude Include="template\templateTest.h">
+      <Filter>template</Filter>
+    </ClInclude>
+    <ClInclude Include="iterate\BreakfastMenu.h">
+      <Filter>iterate</Filter>
+    </ClInclude>
+    <ClInclude Include="iterate\LunchMenu.h">
+      <Filter>iterate</Filter>
+    </ClInclude>
+    <ClInclude Include="iterate\MenuItem.h">
+      <Filter>iterate</Filter>
+    </ClInclude>
+    <ClInclude Include="iterate\Waiter.h">
+      <Filter>iterate</Filter>
+    </ClInclude>
+    <ClInclude Include="iterate\BreakfastMenuIterate.h">
+      <Filter>iterate</Filter>
+    </ClInclude>
+    <ClInclude Include="iterate\Iterate.h">
+      <Filter>iterate</Filter>
+    </ClInclude>
+    <ClInclude Include="iterate\LunchMenuIterate.h">
+      <Filter>iterate</Filter>
+    </ClInclude>
+    <ClInclude Include="composite\Menu.h">
+      <Filter>composite</Filter>
+    </ClInclude>
+    <ClInclude Include="composite\MenuComponent.h">
+      <Filter>composite</Filter>
+    </ClInclude>
+    <ClInclude Include="composite\ConcreteMenuItem.h">
+      <Filter>composite</Filter>
+    </ClInclude>
+    <ClInclude Include="composite\ComponentTest.h">
+      <Filter>composite</Filter>
+    </ClInclude>
+    <ClInclude Include="state\GumballMachine.h">
+      <Filter>state</Filter>
+    </ClInclude>
+    <ClInclude Include="state\HasCoinState.h">
+      <Filter>state</Filter>
+    </ClInclude>
+    <ClInclude Include="state\NonCoinState.h">
+      <Filter>state</Filter>
+    </ClInclude>
+    <ClInclude Include="state\SellState.h">
+      <Filter>state</Filter>
+    </ClInclude>
+    <ClInclude Include="state\State.h">
+      <Filter>state</Filter>
+    </ClInclude>
+    <ClInclude Include="state\GumballMachinePattern.h">
+      <Filter>state</Filter>
+    </ClInclude>
+    <ClInclude Include="state\SellOutState.h">
+      <Filter>state</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\RemoteProxy\GumballMonitor.h">
+      <Filter>proxy\RemoteProxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\RemoteProxy\GumballMonitorProxy.h">
+      <Filter>proxy\RemoteProxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\RemoteProxy\GumballMonitorStub.h">
+      <Filter>proxy\RemoteProxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\RemoteProxy\RemoteProxyTest.h">
+      <Filter>proxy\RemoteProxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\VirtualProxy\Icon.h">
+      <Filter>proxy\VirtualProxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\VirtualProxy\IconEntry.h">
+      <Filter>proxy\VirtualProxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\VirtualProxy\IconProxy.h">
+      <Filter>proxy\VirtualProxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\VirtualProxy\VirtualProxyTest.h">
+      <Filter>proxy\VirtualProxy</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -268,6 +439,141 @@
     </ClCompile>
     <ClCompile Include="singleton\LazySingleton.cpp">
       <Filter>singleton</Filter>
+    </ClCompile>
+    <ClCompile Include="command\Command.cpp">
+      <Filter>command</Filter>
+    </ClCompile>
+    <ClCompile Include="command\RomoteControl.cpp">
+      <Filter>command</Filter>
+    </ClCompile>
+    <ClCompile Include="command\CommandClient.cpp">
+      <Filter>command</Filter>
+    </ClCompile>
+    <ClCompile Include="command\LightCommand.cpp">
+      <Filter>command</Filter>
+    </ClCompile>
+    <ClCompile Include="command\Light.cpp">
+      <Filter>command</Filter>
+    </ClCompile>
+    <ClCompile Include="adapter\Bird.cpp">
+      <Filter>adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="adapter\ConcreteBird.cpp">
+      <Filter>adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="adapter\Chicken.cpp">
+      <Filter>adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="adapter\ConcreteChicken.cpp">
+      <Filter>adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="adapter\BirdAdapter.cpp">
+      <Filter>adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="adapter\AdapterTest.cpp">
+      <Filter>adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="facade\facade.cpp">
+      <Filter>facade</Filter>
+    </ClCompile>
+    <ClCompile Include="facade\Screen.cpp">
+      <Filter>facade</Filter>
+    </ClCompile>
+    <ClCompile Include="facade\TV.cpp">
+      <Filter>facade</Filter>
+    </ClCompile>
+    <ClCompile Include="facade\VCD.cpp">
+      <Filter>facade</Filter>
+    </ClCompile>
+    <ClCompile Include="template\SanQi.cpp">
+      <Filter>template</Filter>
+    </ClCompile>
+    <ClCompile Include="template\Tea.cpp">
+      <Filter>template</Filter>
+    </ClCompile>
+    <ClCompile Include="template\Drink.cpp">
+      <Filter>template</Filter>
+    </ClCompile>
+    <ClCompile Include="template\NewSanQi.cpp">
+      <Filter>template</Filter>
+    </ClCompile>
+    <ClCompile Include="template\NewTea.cpp">
+      <Filter>template</Filter>
+    </ClCompile>
+    <ClCompile Include="template\templateTest.cpp">
+      <Filter>template</Filter>
+    </ClCompile>
+    <ClCompile Include="iterate\BreakfastMenu.cpp">
+      <Filter>iterate</Filter>
+    </ClCompile>
+    <ClCompile Include="iterate\LunchMenu.cpp">
+      <Filter>iterate</Filter>
+    </ClCompile>
+    <ClCompile Include="iterate\MenuItem.cpp">
+      <Filter>iterate</Filter>
+    </ClCompile>
+    <ClCompile Include="iterate\Waiter.cpp">
+      <Filter>iterate</Filter>
+    </ClCompile>
+    <ClCompile Include="iterate\BreakfastMenuIterate.cpp">
+      <Filter>iterate</Filter>
+    </ClCompile>
+    <ClCompile Include="iterate\Iterate.cpp">
+      <Filter>iterate</Filter>
+    </ClCompile>
+    <ClCompile Include="iterate\LunchMenuIterate.cpp">
+      <Filter>iterate</Filter>
+    </ClCompile>
+    <ClCompile Include="composite\Menu.cpp">
+      <Filter>composite</Filter>
+    </ClCompile>
+    <ClCompile Include="composite\MenuComponent.cpp">
+      <Filter>composite</Filter>
+    </ClCompile>
+    <ClCompile Include="composite\ConcreteMenuItem.cpp">
+      <Filter>composite</Filter>
+    </ClCompile>
+    <ClCompile Include="composite\ComponentTest.cpp">
+      <Filter>composite</Filter>
+    </ClCompile>
+    <ClCompile Include="state\GumballMachine.cpp">
+      <Filter>state</Filter>
+    </ClCompile>
+    <ClCompile Include="state\HasCoinState.cpp">
+      <Filter>state</Filter>
+    </ClCompile>
+    <ClCompile Include="state\NonCoinState.cpp">
+      <Filter>state</Filter>
+    </ClCompile>
+    <ClCompile Include="state\SellState.cpp">
+      <Filter>state</Filter>
+    </ClCompile>
+    <ClCompile Include="state\State.cpp">
+      <Filter>state</Filter>
+    </ClCompile>
+    <ClCompile Include="state\GumballMachinePattern.cpp">
+      <Filter>state</Filter>
+    </ClCompile>
+    <ClCompile Include="state\SellOutState.cpp">
+      <Filter>state</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\RemoteProxy\GumballMonitorProxy.cpp">
+      <Filter>proxy\RemoteProxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\RemoteProxy\GumballMonitorStub.cpp">
+      <Filter>proxy\RemoteProxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\RemoteProxy\RemoteProxyTest.cpp">
+      <Filter>proxy\RemoteProxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\VirtualProxy\IconEntry.cpp">
+      <Filter>proxy\VirtualProxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\VirtualProxy\IconProxy.cpp">
+      <Filter>proxy\VirtualProxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\VirtualProxy\VirtualProxyTest.cpp">
+      <Filter>proxy\VirtualProxy</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
