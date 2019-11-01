@@ -6,4 +6,4 @@
 bool SequenceSearch(const std::vector<int>& data, int target);
 
 // 二分查找，不仅对代码有指导意义，对于平时做事也是有较大指导意义，录入根据代码提交号排查问题
-bool BinarySearch(const std::vector<int>& data, int target);
+bool BinarySearch(const std::vector<int>& data, int target, int& search_cout);

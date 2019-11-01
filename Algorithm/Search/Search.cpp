@@ -15,7 +15,7 @@ bool SequenceSearch(const std::vector<int>& data, int target)
     return false;
 }
 
-bool BinarySearch(const std::vector<int>& data, int target)
+bool BinarySearch(const std::vector<int>& data, int target, int& search_cout)
 {
     if (data.empty())
     {
@@ -26,18 +26,20 @@ bool BinarySearch(const std::vector<int>& data, int target)
     uint32_t high = data.size() - 1;
     while (low <= high)
     {
+        search_cout = search_cout + 1;
+
         uint32_t middle = low + (high - low) / 2;
-        if (data[middle] > target)
+        if (data[middle] == target)
+        {
+            return true;
+        }
+        else if (data[middle] > target)
         {
             high = middle - 1;
         }
-        else if (data[middle] < target)
-        {
-            low = middle + 1;
-        }
         else
         {
-            return true;
+            low = middle + 1;
         }
     }
     return false;
