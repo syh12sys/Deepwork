@@ -13,3 +13,4 @@ bool SearchInSortedMatrix2(int matrix[3][4], int target, int& search_cout);
 
 // 思路3：右上角查找 + 二分查找，如果全部有序性能优于思路2，如果有两行需要查找性能比思路2差
 bool SearchInSortedMatrix3(int matrix[3][4], int target, int& search_cout);
+

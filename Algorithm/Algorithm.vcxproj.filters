@@ -16,6 +16,12 @@
     <Filter Include="Search">
       <UniqueIdentifier>{0060eb86-a3d1-4088-9d8f-7b23f13a5e0a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Sort">
+      <UniqueIdentifier>{347fa758-3e24-486a-86ef-6dc2307e0439}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Advance">
+      <UniqueIdentifier>{3622dd6d-0682-4c36-938d-0e34f4d44965}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -30,6 +36,21 @@
     <ClInclude Include="Search\Search.h">
       <Filter>Search</Filter>
     </ClInclude>
+    <ClInclude Include="Sort\Sort.h">
+      <Filter>Sort</Filter>
+    </ClInclude>
+    <ClInclude Include="Advance\advance_search.h">
+      <Filter>Advance</Filter>
+    </ClInclude>
+    <ClInclude Include="Advance\string_algorithm.h">
+      <Filter>Advance</Filter>
+    </ClInclude>
+    <ClInclude Include="Advance\tree_algorithm.h">
+      <Filter>Advance</Filter>
+    </ClInclude>
+    <ClInclude Include="Advance\stack_queue_algorithm.h">
+      <Filter>Advance</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -40,6 +61,21 @@
     </ClCompile>
     <ClCompile Include="Search\Search.cpp">
       <Filter>Search</Filter>
+    </ClCompile>
+    <ClCompile Include="Sort\Sort.cpp">
+      <Filter>Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="Advance\advance_search.cpp">
+      <Filter>Advance</Filter>
+    </ClCompile>
+    <ClCompile Include="Advance\string_algorithm.cpp">
+      <Filter>Advance</Filter>
+    </ClCompile>
+    <ClCompile Include="Advance\tree_algorithm.cpp">
+      <Filter>Advance</Filter>
+    </ClCompile>
+    <ClCompile Include="Advance\stack_queue_algorithm.cpp">
+      <Filter>Advance</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
