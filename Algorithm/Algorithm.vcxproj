@@ -84,6 +84,9 @@
     <ClInclude Include="Advance\stack_queue_algorithm.h" />
     <ClInclude Include="Advance\string_algorithm.h" />
     <ClInclude Include="Advance\tree_algorithm.h" />
+    <ClInclude Include="DataStructure\MyArray.h" />
+    <ClInclude Include="DataStructure\MyList.h" />
+    <ClInclude Include="DataStructure\MyTree.h" />
     <ClInclude Include="Search\Search.h" />
     <ClInclude Include="Sort\Sort.h" />
     <ClInclude Include="stdafx.h" />
@@ -95,6 +98,9 @@
     <ClCompile Include="Advance\string_algorithm.cpp" />
     <ClCompile Include="Advance\tree_algorithm.cpp" />
     <ClCompile Include="Algorithm.cpp" />
+    <ClCompile Include="DataStructure\MyArray.cpp" />
+    <ClCompile Include="DataStructure\MyList.cpp" />
+    <ClCompile Include="DataStructure\MyTree.cpp" />
     <ClCompile Include="Search\Search.cpp" />
     <ClCompile Include="Sort\Sort.cpp" />
     <ClCompile Include="stdafx.cpp">

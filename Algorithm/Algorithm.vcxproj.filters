@@ -22,6 +22,9 @@
     <Filter Include="Advance">
       <UniqueIdentifier>{3622dd6d-0682-4c36-938d-0e34f4d44965}</UniqueIdentifier>
     </Filter>
+    <Filter Include="DataStructure">
+      <UniqueIdentifier>{40e9d087-2d17-49c5-b169-fb174c60e3ad}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -51,6 +54,15 @@
     <ClInclude Include="Advance\stack_queue_algorithm.h">
       <Filter>Advance</Filter>
     </ClInclude>
+    <ClInclude Include="DataStructure\MyArray.h">
+      <Filter>DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructure\MyList.h">
+      <Filter>DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructure\MyTree.h">
+      <Filter>DataStructure</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -76,6 +88,15 @@
     </ClCompile>
     <ClCompile Include="Advance\stack_queue_algorithm.cpp">
       <Filter>Advance</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure\MyArray.cpp">
+      <Filter>DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure\MyList.cpp">
+      <Filter>DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure\MyTree.cpp">
+      <Filter>DataStructure</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
