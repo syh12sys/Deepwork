@@ -44,3 +44,24 @@ bool BinarySearch(const std::vector<int>& data, int target, int& search_cout)
     }
     return false;
 }
+
+bool BinarySearchRecursive(const std::vector<int>& data, int low, int high, int target)
+{
+    if (low > high)
+    {
+        return false;
+    }
+    int middle = low + (high - low) / 2;
+    if (data[middle] > target)
+    {
+       return BinarySearchRecursive(data, low, middle - 1, target);
+    }
+    else if (data[middle] < target)
+    {
+       return BinarySearchRecursive(data, low + 1, high, target);
+    }
+    else
+    {
+        return true;
+    }
+}

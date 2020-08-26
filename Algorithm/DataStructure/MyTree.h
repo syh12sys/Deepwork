@@ -200,3 +200,64 @@ void LevelOrder(const MyTree<data_type>* const tree)
         }
     }
 }
+
+// 二叉树的高度
+template <typename data_type>
+int GetTreeHigth(const MyTree<data_type>* const tree)
+{
+    if (tree == nullptr)
+    {
+        return 0;
+    }
+    int leftHigth = GetTreeHigth(tree->left);
+    int rigthHigth = GetTreeHigth(tree->right);
+    return leftHigth > rigthHigth ? leftHigth + 1 : rigthHigth + 1;
+}
+
+// 二叉树第k层节点个数
+template <typename data_type>
+int GetKLevelNodes(const MyTree<data_type>* const tree, int k)
+{
+    if (tree == nullptr || k < 1)
+    {
+        return 0;
+    }
+    if (k == 1)
+    {
+        return 1;
+    }
+    int l = GetKLevelNodes(tree->left, k - 1);
+    int r = GetKLevelNodes(tree->right, k - 1);
+    return l + r;
+}
+
+// 叶子节点的个数
+template <typename data_type>
+int GetLeafCount(const MyTree<data_type>* const tree)
+{
+    if (tree == nullptr)
+    {
+        return 0;
+    }
+    if (tree->left == nullptr && tree->right == nullptr)
+    {
+        return 1;
+    }
+
+    int l = GetLeafCount(tree->left);
+    int r = GetLeafCount(tree->right);
+    return l + r;
+}
+
+// 节点个数
+template <typename data_type>
+int GetNodeCount(const MyTree<data_type>* const tree)
+{
+    if (tree == nullptr)
+    {
+        return 0;
+    }
+    int l = GetNodeCount(tree->left);
+    int r = GetNodeCount(tree->right);
+    return l + r + 1; 
+}

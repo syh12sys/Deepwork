@@ -3,6 +3,11 @@
 
 void InsertSort(std::vector<int>& pendingSortData)
 {
+    if (pendingSortData.size() <= 1)
+    {
+        return;
+    }
+
     for (size_t i = 1; i < pendingSortData.size(); ++i)
     {
         for (size_t j = 0; j < i; ++j)
@@ -19,6 +24,10 @@ void InsertSort(std::vector<int>& pendingSortData)
 
 void SelectSort(std::vector<int>& pendingSortData)
 {
+    if (pendingSortData.size() <= 1)
+    {
+        return;
+    }
     for (size_t i = 0; i < pendingSortData.size(); ++i)
     {
         int minIndex = i;
@@ -37,6 +46,11 @@ void SelectSort(std::vector<int>& pendingSortData)
 
 void BubbleSort(std::vector<int>& pendingSortData)
 {
+    if (pendingSortData.size() <= 1)
+    {
+        return;
+    }
+
     for (size_t i = 0; i < pendingSortData.size(); ++i)
     {
         for (size_t j = 0; j < pendingSortData.size() - 1; ++j)
@@ -49,4 +63,46 @@ void BubbleSort(std::vector<int>& pendingSortData)
             }
         }
     }
+}
+
+void QuickSort(std::vector<int>& pendingSortData, int low, int high)
+{
+    if (pendingSortData.size() <= 1 || low >= high)
+    {
+        return;
+    }
+
+    int pivot = pendingSortData[low];
+    int i = low;
+    int j = high;
+    while (i < j)
+    {
+        while (i < j)
+        {
+            if (pendingSortData[j] < pivot)
+            {
+                pendingSortData[i] = pendingSortData[j];
+            }
+            else
+            {
+                --j;
+            }
+        }
+
+        while (i < j)
+        {
+            if (pendingSortData[i] > pivot)
+            {
+                pendingSortData[j] = pendingSortData[i];
+            }
+            else
+            {
+                ++i;
+            }
+        }
+    }
+    pendingSortData[i] = pivot;
+
+    QuickSort(pendingSortData, low, pivot - 1);
+    QuickSort(pendingSortData, pivot + 1, high);
 }
