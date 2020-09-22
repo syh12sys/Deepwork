@@ -14,7 +14,11 @@
 #include "Advance/tree_algorithm.h"
 #include "Advance/stack_queue_algorithm.h"
 
+#include "DublePrime/DublePrime.h"
+#include "DublePrime/DubleIndex.h"
+
 #include <iostream>
+#include <algorithm>
 
 int _tmain(int argc, _TCHAR* argv[])
 {
@@ -71,6 +75,16 @@ int _tmain(int argc, _TCHAR* argv[])
         std::cout << i << "\t";
     }
 
+    std::cout << "\n-----------------快速排序，挖坑填数+分治-------------------------------" << std::endl;
+    data = { 7, 8, 5, 3, 6, 8, 10 };
+    std::cout << "排序前：";
+    std::for_each(data.begin(), data.end(), [](int i) { std::cout << i << "\t"; });
+
+    QuickSort(data, 0, data.size() - 1);
+
+    std::cout << "\n排序后：";
+    std::for_each(data.begin(), data.end(), [](int i) { std::cout << i << "\t"; });
+
     std::cout << "\n-----------------有序数组，考验智力的开始-------------------------------" << std::endl;
     int sortedMatrix[3][4] = { { 2, 3, 4, 5 }, { 6, 7, 8, 9 }, { 10, 11, 12, 13 } };
     std::cout << "原始数据\n";
@@ -124,6 +138,12 @@ int _tmain(int argc, _TCHAR* argv[])
     std::cout << twoStackSimulateQueue.Pop() << "\t";
     std::cout << twoStackSimulateQueue.Pop() << "\t";
     std::cout << twoStackSimulateQueue.Pop() << "\t";
+
+    // 双指针
+    TestDulePrime();
+
+    // 双索引
+    TestDubleIndex();
 
     getchar();
 	return 0;

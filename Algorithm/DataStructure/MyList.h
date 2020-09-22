@@ -16,25 +16,25 @@ struct MyList
 template<typename list_type>
 MyList<list_type>* CreateMyList()
 {
-    return new MyList;
+    return new MyList<list_type>;
 }
 
 template<typename list_type>
 void DestroyMyList(const MyList<list_type>* const list)
 {
-    MyList* index = list;
+   auto index = list;
     while (index)
     {
-        MyList* next = index->next;
+        auto next = index->next;
         delete index;
         index = next;
     }
 }
 
 template<typename list_type>
-MyList<list_type>* FindMyList(const MyList<list_type>* const list, const list_type& target)
+MyList<list_type>* FindMyList(MyList<list_type>* list, const list_type& target)
 {
-    MyList* index = list;
+    auto index = list;
     while (index)
     {
         if (index->data == target)
@@ -63,7 +63,7 @@ MyList<list_type>* FindMyList2(const MyList<list_type>* const list, const list_t
 template<typename list_type>
 void AddMyList(MyList<list_type>* list, const list_type& data)
 {
-    MyList* new_node = new MyList;
+    auto new_node = new MyList<list_type>;
     new_node->data = data;
     if (list == nullptr)
     {
@@ -71,7 +71,7 @@ void AddMyList(MyList<list_type>* list, const list_type& data)
         return;
     }
 
-    MyList* index = list;
+    auto index = list;
     while (index)
     {
         if (index->next == nullptr)

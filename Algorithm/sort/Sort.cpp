@@ -82,6 +82,7 @@ void QuickSort(std::vector<int>& pendingSortData, int low, int high)
             if (pendingSortData[j] < pivot)
             {
                 pendingSortData[i] = pendingSortData[j];
+                break;
             }
             else
             {
@@ -94,6 +95,7 @@ void QuickSort(std::vector<int>& pendingSortData, int low, int high)
             if (pendingSortData[i] > pivot)
             {
                 pendingSortData[j] = pendingSortData[i];
+                break;
             }
             else
             {
@@ -103,6 +105,6 @@ void QuickSort(std::vector<int>& pendingSortData, int low, int high)
     }
     pendingSortData[i] = pivot;
 
-    QuickSort(pendingSortData, low, pivot - 1);
-    QuickSort(pendingSortData, pivot + 1, high);
+    QuickSort(pendingSortData, low, i - 1);
+    QuickSort(pendingSortData, i + 1, high);
 }

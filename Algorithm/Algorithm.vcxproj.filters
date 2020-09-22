@@ -25,6 +25,9 @@
     <Filter Include="DataStructure">
       <UniqueIdentifier>{40e9d087-2d17-49c5-b169-fb174c60e3ad}</UniqueIdentifier>
     </Filter>
+    <Filter Include="DublePrime">
+      <UniqueIdentifier>{7da2ae42-0a96-41c0-af4f-1f8d476df440}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -63,6 +66,12 @@
     <ClInclude Include="DataStructure\MyTree.h">
       <Filter>DataStructure</Filter>
     </ClInclude>
+    <ClInclude Include="DublePrime\DubleIndex.h">
+      <Filter>DublePrime</Filter>
+    </ClInclude>
+    <ClInclude Include="DublePrime\DublePrime.h">
+      <Filter>DublePrime</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -97,6 +106,12 @@
     </ClCompile>
     <ClCompile Include="DataStructure\MyTree.cpp">
       <Filter>DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="DublePrime\DubleIndex.cpp">
+      <Filter>DublePrime</Filter>
+    </ClCompile>
+    <ClCompile Include="DublePrime\DublePrime.cpp">
+      <Filter>DublePrime</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

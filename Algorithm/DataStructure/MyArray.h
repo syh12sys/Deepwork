@@ -22,13 +22,20 @@ struct MyArray
 template <typename array_type>
 MyArray<array_type>* CreateMyArray(int capability)
 {
-    if (len <= 0)
+    if (capability <= 0)
     {
         return nullptr;
     }
-    MyArray* array = new MyArray;
+    MyArray<array_type>* array = new MyArray<array_type>();
     array->base = new array_type[capability];
     array->capability = capability;
+    return array;
+}
+
+template <typename array_type>
+array_type GetAt(const MyArray<array_type>* const array, int i)
+{
+    return array->base[i];
 }
 
 template <typename array_type>
@@ -67,7 +74,7 @@ bool DestroyMyArray(const MyArray<array_type>* const array)
 template <typename array_type>
 int FindMyArray(const MyArray<array_type>* const array, const array_type& target)
 {
-    if (IsValid(array))
+    if (!IsValid(array))
     {
         return -1;
     }
@@ -85,9 +92,9 @@ int FindMyArray(const MyArray<array_type>* const array, const array_type& target
 template <typename array_type>
 bool AddMyArray(MyArray<array_type>* const array, const array_type& target)
 {
-    if (IsValid(array))
+    if (!IsValid(array))
     {
-        return -1;
+        return false;
     }
 
     if (array->used == array->capability)
@@ -100,8 +107,9 @@ bool AddMyArray(MyArray<array_type>* const array, const array_type& target)
         array->capability = new_capability;
     }
 
-    array[array->used] = target;
+    array->base[array->used] = target;
     ++array->used;
+    return true;
 }
 
 template <typename array_type>
